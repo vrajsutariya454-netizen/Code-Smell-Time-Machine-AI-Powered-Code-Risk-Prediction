@@ -42,6 +42,12 @@ export const AuthPage: React.FC<AuthPageProps> = ({ onNavigate }) => {
 
           <div className="mt-8 space-y-3">
             <Button
+              onClick={() => window.location.href = "http://localhost:8000/auth/test/login"}
+              className="w-full h-12 rounded-xl bg-emerald-600 text-white hover:bg-emerald-500 text-base font-semibold transition-all shadow-xl hover:shadow-2xl hover:scale-[1.01]"
+            >
+              <GitBranch className="h-5 w-5 mr-2.5" /> Test Login (Dev)
+            </Button>
+            <Button
               onClick={() => window.location.href = "http://localhost:8000/auth/github/login"}
               className="w-full h-12 rounded-xl bg-white text-black hover:bg-white/90 text-base font-semibold transition-all shadow-xl hover:shadow-2xl hover:scale-[1.01]"
             >
